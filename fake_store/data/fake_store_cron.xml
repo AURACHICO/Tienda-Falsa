@@ -1,0 +1,15 @@
+<odoo>
+    <data >
+        <record id="fake_store.ir_cron_fake_store_update" model="ir.cron">
+            <field name="name">Actualizar Productos</field>
+            <field name="model_id" ref="product.model_product_template"/>
+            <field name="state">code</field>
+            <field name="code">model.update_products_from_fake_store()</field>
+            <field name="interval_number">1</field>
+            <field name="interval_type">days</field>
+            <field name="numbercall">-1</field>
+            <field name="active">True</field>
+        </record>
+    </data>
+    
+</odoo>

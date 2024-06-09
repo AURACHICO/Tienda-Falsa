@@ -1,0 +1,17 @@
+<odoo>
+    <!--Heredar vista form de prouctos y colocar los campos faltantes de la consulta que se le hizo a la API -->
+    <record id="fake_store.view_product_form_fake_store_inh" model="ir.ui.view">
+        <field name="name">product.template.form.fake.store.inh</field>
+        <field name="model">product.template</field>
+        <field name="inherit_id" ref="product.product_template_form_view"/>
+        <field name="arch" type="xml">
+            <!-- Se ubico despues de Unidades de medida de compra -->
+            <xpath expr="//field[@name='uom_po_id']" position="after">               
+                <field name="fake_store_id"/>
+                <field name="fake_store_category"/>
+                <field name="fake_store_rating"/>
+                <field name="fake_store_rating_count"/>
+            </xpath>
+        </field>
+    </record>
+</odoo>

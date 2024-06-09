@@ -1,0 +1,8 @@
+<odoo>
+    <!-- Boton sitio web de odoo -->
+    <template id="fake_store.fake_store_export_button" inherit_id="website.layout">
+        <xpath expr="//header" position="inside">
+            <a href="/exportar_productos" class="btn btn-primary">Exportar Productos</a>
+        </xpath>
+    </template>
+</odoo>
